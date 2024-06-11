@@ -57,7 +57,7 @@
 }
 .banner{
   
-  height: 70vh;
+  height: 60vh;
   width: 100%;
   background-color:  var(--body_background);
   color:var(--font-color);
