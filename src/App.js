@@ -1,9 +1,11 @@
+
 import React from "react";
 import logo from './wreath.png';
 import DarkMode from './components/DarkMode/DarkMode';
 import { useTranslation } from "react-i18next";
 import './App.css';
-
+import Lottie from 'lottie-react';
+import LottieFile from './assets/lottie.json'
 function App() {
   const [t, i18n] = useTranslation("global");
 
@@ -28,15 +30,18 @@ function App() {
               <option value="en">EN</option>
               <option value="fr">FR</option>
             </select>
-           
+            
           </div>
           <div> <DarkMode /></div>
         </div>
       </div>
       <div className="banner">
-        <div className="banner_infor">
+      <div className="banner_infor">
           <h1>{t("header.message")}</h1>
           <p>{t("home.body")}</p>
+        </div>
+        <div >
+          <Lottie className="image" animationData= {LottieFile}/>
         </div>
       </div>
     </div>

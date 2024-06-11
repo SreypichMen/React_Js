@@ -40,7 +40,7 @@
   box-shadow: 10px 4px 5px #0003;
 
 }
-p{
+.p{
  color: var(--font-color);
 }
 .header-left{
@@ -62,19 +62,58 @@ p{
   background-color:  var(--body_background);
   color:var(--font-color);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: start;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: var(--body_color);
   box-shadow: 5px 2px 2px #0003;
 }
 .banner_infor{
+  margin-top: 20vh;
   margin-left: 30px;
   display: flex;
   flex-direction: column;
-  
+  justify-content: center;
 }
+/* App.css */
+@media screen and (max-width: 788px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .header-left, .header-right {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .header-right {
+    text-align: center;
+  }
+
+ 
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+  }
+
+  .banner_infor {
+    margin-top: 100px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .image{
+    
+    display: none;
+    
+  }
+}
+
+/* Add any additional media queries for different screen sizes */
 
 .select-wrapper {
   position: relative;
