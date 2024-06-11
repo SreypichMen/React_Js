@@ -1,0 +1,8 @@
+{
+    "header":{
+        "message": "Welcome to this website!"
+    }, 
+    "home":{
+        "body":"It has a lot of  information"
+    }
+}
