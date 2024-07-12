@@ -1,4 +1,6 @@
+/* App.css */
 
+/* General styles */
 .App {
   text-align: center;
 }
@@ -24,43 +26,40 @@
   font-size: calc(10px + 2vmin);
   color: var(--body_color);
 }
-.App-link{
-  color:var(--link_color)
+
+.App-link {
+  color: var(--link_color);
 }
 
-.header{
+.header {
   background-color: white;
   min-height: 40px;
-  width:100%;
+  width: 100%;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: calc(5px + 2vmin);
   box-shadow: 10px 4px 5px #0003;
+}
 
-}
-.p{
- color: var(--font-color);
-}
-.header-left{
-  padding-left:20px;
-  display:flex;
-  justify-content: space-around;
-
-}
-.header-right{
-  padding-right:20px;
+.header-left {
+  padding-left: 20px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.banner{
-  
+
+.header-right {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.banner {
   height: 60vh;
   width: 100%;
-  background-color:  var(--body_background);
-  color:var(--font-color);
+  background-color: var(--body_background);
+  color: var(--font-color);
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -69,14 +68,16 @@
   color: var(--body_color);
   box-shadow: 5px 2px 2px #0003;
 }
-.banner_infor{
+
+.banner_infor {
   margin-top: 20vh;
   margin-left: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-/* App.css */
+
+/* Media query for smaller screens */
 @media screen and (max-width: 788px) {
   .header {
     flex-direction: row;
@@ -90,11 +91,6 @@
     margin-bottom: 10px;
   }
 
-  .header-right {
-    text-align: center;
-  }
-
- 
   .banner {
     flex-direction: column;
     align-items: center;
@@ -106,15 +102,13 @@
     margin-left: 0;
     text-align: center;
   }
-  .image{
-    
+
+  .image {
     display: none;
-    
   }
 }
 
-/* Add any additional media queries for different screen sizes */
-
+/* Select dropdown styles */
 .select-wrapper {
   position: relative;
   display: inline-block;
@@ -145,7 +139,7 @@
 .select-arrow {
   position: absolute;
   top: 50%;
-  right: 120px;
+  right: 10px; /* Adjust as necessary */
   transform: translateY(-50%);
   pointer-events: none;
 }
@@ -155,3 +149,4 @@
   font-size: 18px;
   color: #555;
 }
+
